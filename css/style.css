@@ -44,6 +44,8 @@ article {
     padding: 1rem;
 }
 
+
+
 .card {
     border-radius: 10px;
     border: 2px solid #004369;
@@ -117,10 +119,65 @@ footer a {
     margin: 0 1rem 3rem 1rem;
 }
 
+/*banner below the navigation*/
+
+.banner{
+    background-image: url(../media/images/jakes-meals.jpg);
+    background-repeat: repeat-x;
+    height: 250px;
+}
+
+@media only screen and (max-width: 750px){
+    .banner{
+        background-image: none;
+        height: 0px;
+    }
+}
+/*end banner below the navigation*/
+
+
+/*intro section*/
+.intro{
+    margin-top: 2rem;
+}
+
+.intro picture, .intro img {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    align-content: center;
+} 
+
+@media (min-width: 750px){
+    .intro {
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .intro-text {
+    flex-basis: 40%;
+    }
+    .intro img, .intro picture {
+        display: inline;
+        margin: 0;
+    }
+    .intro picture, .intro img {
+        border-radius: 10px;
+        display: block;
+        margin: 0;
+        align-content: center;
+    } 
+}
+/*end intro section*/
 
 /* breakpoint chosen because around this width, the "soup" in "chicken tortilla soup" wraps to the next line. You may have chosen a different dimension and that's fine. Just have a reason for choosing your breakpoint! */
 
 @media (min-width: 750px) {
+   
+    
     section,
     article {
         max-width: 1200px;
